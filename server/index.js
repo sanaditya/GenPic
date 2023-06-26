@@ -30,7 +30,9 @@ const startServer = async () => {
         console.log(err)
     }
 
-    app.listen(8080, () => console.log('Server started on http://localhost:8080'))
+    const port = 3030 || 8080;
+
+    app.listen(port, () => console.log('Server started on http://localhost:8080'))
 }
 
 startServer();
